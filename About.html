@@ -25,9 +25,8 @@ vastu,Free vastu,Free vaastu advice, </title>
     <title>Dugar Vaastu Consultants</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <!-- Syntax Highlighter -->
+<link href="css/demo.css" rel="stylesheet" type="text/css" />
 
-    <link href="css/demo.css" rel="stylesheet" type="text/css" />
-   
     <!-- Demo CSS -->
     <!-- Modernizr -->
     <script src="js/modernizr.js"></script>
@@ -178,13 +177,13 @@ vastu,Free vastu,Free vaastu advice, </title>
         <a href="https://www.youtube.com/channel/UC0qxevUqfzqCTxbyD_B23hw" style="vertical-align:top;" target="_blank" class="fa fa-youtube"></a>
     </span>
 
-    <span style="margin-left: -13%;margin-top: 4%;font-size: 1.1vw;position:  absolute;color: darkblue;font-family: serif;font-weight: 600;"><img style="width:12%;height:12%;" src="images/mail.png"><span style="padding-bottom:10px;">ummeddugarjain@gmail.com</span><br>&nbsp;<img style="width:9%;height:9%;" src="images/phone.png"> +91-9868109240</span>
+    <span id="mail" style="margin-left: -13%;margin-top: 4%;font-size: 1.1vw;position:  absolute;color: darkblue;font-family: serif;font-weight: 600;"><img id="mailicon" style="width:12%;height:12%;" src="images/mail.png"><span style="padding-bottom:10px;">ummeddugarjain@gmail.com</span><br>&nbsp;<img id="phoneicon" style="width:9%;height:9%;" src="images/phone.png"> +91-9868109240</span>
 
     <!--<h1 style="font-size:1.5vw; text-align:right;font-family:'Times New Roman'"><b><span style="color:darkred">दिशा बदलो,</span><span style="color:darkblue"> दशा बदलेगी !</span></b></h1>-->
     <!--<img src="images2/blue_ribbon.png" style="z-index:-1; top:11%;left:20%;width:70%;" />-->
 
     <div class="topnav" style="height:50%;height:  50px;">
-        <a  href="/" style="font-family:'Times New Roman'">Home</a>
+        <a href="Index.html" style="font-family:'Times New Roman'">Home</a>
         <a class="active" href="About.html" style="font-family:'Times New Roman'">About</a>
         <!--<a href="Services.htm" style="font-family:'Times New Roman'">Services</a>-->
         <div class="dropdown">
@@ -204,10 +203,40 @@ vastu,Free vastu,Free vaastu advice, </title>
         <a href="ContactUs.html" style="font-family:'Times New Roman'">Contact Us</a>
 
     </div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            //Add your javascript for large screens here
+            if ($(window).width() < 750) {
+                $("#mail").css("marginLeft", "0px");
+                $("#mailicon").css("marginLeft", "17%");
+                $("#phoneicon").css("marginLeft", "17%");
+                $("#mailicon").css("width", "30px");
+                $("#phoneicon").css("width", "30px");
+                $("#mailicon").css("height", "30px");
+                $("#phoneicon").css("height", "30px");
+                $("#mail").css("margin-top", "0px");
+                $("#mail").css("font-size", "3.5vw");
+                $("#mail").css("position", "relative");
+                $(".topnav a").css("font-size", "3.5vw");
+                $(".dropdown").css("font-size", "3.5vw");
+                $(".dropbtn").css("font-size", "3.5vw");
+                $("#medal").css("height", "7%");
+                $("#client").css("height", "7%");
+                $("#books").css("height", "10%");
+                $("#emailid").css("font-size", "3.0vw");
+                $("#phoneno").css("font-size", "3.0vw");
+                // Specific to this page
+                $("#weoften").css("font-size", "3.0vw");
+                $("#vaastumeans").css("font-size", "3.0vw");
+                $("#aboutummed").css("font-size", "3.0vw");
+            }
+        });
+    </script>
     <table style="width:100%;">
         <tr>
             <td style="width:55%;">
-                <div style="padding-left: 3%;font-size:1.2vw;width:90%;height:100%;background-color:rgba(211,211,211,0.5);border:groove;border-width:thick;border-color:darkred;margin-left:5%;border-radius:15px;font-family: serif;padding-right: 3%;font-weight: 600;font-style:  italic;line-height: 1.2;text-align: center;">
+                <div id="weoften" style="padding-left: 3%;font-size:1.2vw;width:90%;height:100%;background-color:rgba(211,211,211,0.5);border:groove;border-width:thick;border-color:darkred;margin-left:5%;border-radius:15px;font-family: serif;padding-right: 3%;font-weight: 600;font-style:  italic;line-height: 1.2;text-align: center;">
                     <br>
                     <h3 style="color:darkred;">How we experince Vaastu in Daily life? </h3>
                     "We Often Observe that while entering a residence we feel delighted while entering some other residence makes us feel uneasy. On a entering a room we feel freshness while in some other room we feel uncomfortable. On shifting in premises some family faces series of conflicts, accidents, deaths etc., while in some other premises the prosperity and peace of the family is amplified. Some factories flourish while some other factories incur heavy losses. In this way we often encounter many examples that shows the link between human life and 'Vaastu' whose basis is perfection or imperfection of this ancient building science <span style="font-size: 1.6vw;color:  darkblue;">Vaastu</span>"<br>.
@@ -220,7 +249,7 @@ vastu,Free vastu,Free vaastu advice, </title>
         </tr>
         <tr>
             <td>
-                <div style="padding-left: 3%;font-size:1.2vw;width:90%;height:100%;background-color:rgba(211,211,211,0.5);border:groove;border-width:thick;border-color:darkred;margin-left:5%;border-radius:15px;font-family: serif;padding-right: 3%;font-weight: 600;font-style:  italic;line-height: 1.2;text-align: center;">
+                <div id="vaastumeans" style="padding-left: 3%;font-size:1.2vw;width:90%;height:100%;background-color:rgba(211,211,211,0.5);border:groove;border-width:thick;border-color:darkred;margin-left:5%;border-radius:15px;font-family: serif;padding-right: 3%;font-weight: 600;font-style:  italic;line-height: 1.2;text-align: center;">
                     <br />
                     <h3 style="color:darkred;">Origins of Vaastu Shastra</h3>
                     Vaastu means abode for gods and humans. Vaastu Shastra is a unique science which can be traced back to ancient India, which is used to reap the benefits of the "panch Tatvas"( five basic elements) of universe. These elements are Akash(Sky),Prithvi (Earth), jal(water), and Vaayu(wind).
@@ -255,7 +284,7 @@ vastu,Free vastu,Free vaastu advice, </title>
                 </div>
             </td>
             <td>
-                <div style="padding-left: 3%;font-size:1.2vw;width:85%;height:100%;background-color:rgba(211,211,211,0.5);border:groove;border-width:thick;border-color:darkred;margin-left:5%;border-radius:15px;font-family: serif;padding-right: 3%;font-weight: 600;font-style:  italic;line-height: 1.2;text-align: center;">
+                <div id="aboutummed" style="padding-left: 3%;font-size:1.2vw;width:85%;height:100%;background-color:rgba(211,211,211,0.5);border:groove;border-width:thick;border-color:darkred;margin-left:5%;border-radius:15px;font-family: serif;padding-right: 3%;font-weight: 600;font-style:  italic;line-height: 1.2;text-align: center;">
                     <br /><br />
                     <img style="width:23%;height:23%;" src="images/HEADSHOT_transparent.png" alt="Ummed Dugar Jain" />
                     <h3 style="color:darkred;">Ummed Dugar Jain <br /><span style="font-size:1.3vw; color:darkblue"> World Renowned Vaastu Consultant</span></h3>
@@ -298,7 +327,7 @@ vastu,Free vastu,Free vaastu advice, </title>
                         <tr>
                             <td>
                                 <span style="text-align:center;">
-                                    <img src="images/medal.png" style="width:70%;height:17%;" />
+                                    <img id="medal" src="images/medal.png" style="width:70%;height:17%;" />
                                     <br />
                                     <span style="font-size:1.6vw;">  61 </span><br /><span style="font-size:0.8vw;"> AWARDS & RECOGNITIONS</span>
                                 </span>
@@ -306,7 +335,7 @@ vastu,Free vastu,Free vaastu advice, </title>
                             <td>
                                 <span style="text-align:center;">
                                     <br />
-                                    <img src="images/client.png" style="width:60%;height:14%;" />
+                                    <img id="client" src="images/client.png" style="width:60%;height:14%;" />
                                     <br />
                                     <span style="font-size:1.6vw;">  10000+ </span><br /><span style="font-size:0.8vw;"> CLIENTS SERVED IN PAST 30 YEARS</span>
                                 </span>
@@ -314,7 +343,7 @@ vastu,Free vastu,Free vaastu advice, </title>
                             <td>
                                 <span style="text-align:center;">
                                     <br />
-                                    <img src="images/Books_ic.png" style="width:70%;height:20%;" />
+                                    <img id="books" src="images/Books_ic.png" style="width:70%;height:20%;" />
                                     <br />
                                     <span style="font-size:1.6vw;">  15 </span><br /><span style="font-size:0.8vw;"> BOOKS AUTHORED ON VAASTU & OTHER SCIENCES</span>
                                 </span>
@@ -334,7 +363,7 @@ vastu,Free vastu,Free vaastu advice, </title>
                         <span style="font-size: 0.8vw;">
                             <span style="
     text-align:  left;
-"><img style="width:6%;height:4%;padding-bottom: 2px;padding-right: 5px;" src="images/mail.png"></span><span style="font-size:0.9vw;position:  relative;top: -10px;">ummeddugarjain@gmail.com<br /><br /></span><img style="width: 4.5%;height: 6.5%;top: -10px;left: 3px;position:  relative;padding-right: 5px;" src="images/phone.png"><span style="font-size:0.9vw;position: relative;top: -15px;"> +91-9868109240 <br> </span>
+"><img style="width:6%;height:4%;padding-bottom: 2px;padding-right: 5px;" src="images/mail.png"></span><span id="emailid" style="font-size:0.9vw;position:  relative;top: -10px;">ummeddugarjain@gmail.com<br /><br /></span><img style="width: 4.5%;height: 6.5%;top: -10px;left: 3px;position:  relative;padding-right: 5px;" src="images/phone.png"><span id="phoneno" style="font-size:0.9vw;position: relative;top: -15px;"> +91-9868109240 <br> </span>
                         </span>
                     </div>
                     <span style="margin-right:10px;">
@@ -351,7 +380,7 @@ vastu,Free vastu,Free vaastu advice, </title>
 
                     </h3>
                     <div style="line-height:130%;text-align:left;padding-left:20%">
-                        <a href="Index.html">Home</a><br />
+                        <a href="index.html">Home</a><br />
                         <a href="About.html">About</a><br /><a href="ServicesHome.html">Residence Services</a><br /><a href="ServicesOffice.html">Office Services</a><br /><a href="ServicesFactory.html">Factory Services</a><br />
                         <a href="Videos.html">Videos</a><br />
                         <a href="VaastuBooks.html">Books</a><br />
