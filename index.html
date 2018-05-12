@@ -300,7 +300,7 @@
                 <br />
                 <span id="mail" style="margin-left: 0%;margin-top: 4%;color: darkblue;font-family: serif;font-weight: 600;">
                     <img id="mailicon" style="width:12%;height:12%;" src="images/mail.png">
-                    <span style="font-size:140%;">ummeddugarjain@gmail.com</span><br/>&nbsp;<img id="phoneicon" style="width:9%;height:9%;font-size:120%" src="images/phone.png"> <span style="font-size:150%">+91-9868109240</span>
+                    <span style="font-size:140%;">ummeddugarjain@gmail.com</span><br/>&nbsp;<span id="phonenewline"><img id="phoneicon" style="width:9%;height:9%;font-size:120%" src="images/phone.png"> <span style="font-size:150%">+91-9868109240</span></span>
                 </span>
             </div>
         </div>
@@ -377,6 +377,8 @@
                 direction: 'down',
                 visible: 4
             });
+
+            $('#phonenewline').html("<img id=\"phoneicon\" style=\"width: 9%; height: 9%; font-size: 120% \" src=\"images/phone.png\"><span style=\"font-size: 150%\"><br/>+91-9868109240</span>");
         });
 
     </script>
