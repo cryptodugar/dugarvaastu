@@ -253,13 +253,13 @@
         $(document).ready(function () {
 
             //Add your javascript for large screens here
-            if ($(window).width() < 100) {
+            if ($(window).width() < 750) {
 
 
                 $(".makeitthree").css("font-size", "3vw");
                 $(".makeitfour").css("font-size", "4vw");
                 $("#mail").css("position", "relative");
-
+                $('#phonenewline').html("<img id=\"phoneicon\" style=\"width: 9%; height: 9%; font-size: 120% \" src=\"images/phone.png\"><span style=\"font-size: 150%\"><br/>+91-9868109240</span>");
 
 
             }
@@ -378,7 +378,7 @@
                 visible: 4
             });
 
-            $('#phonenewline').html("<img id=\"phoneicon\" style=\"width: 9%; height: 9%; font-size: 120% \" src=\"images/phone.png\"><span style=\"font-size: 150%\"><br/>+91-9868109240</span>");
+            
         });
 
     </script>
