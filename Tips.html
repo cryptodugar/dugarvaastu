@@ -244,14 +244,15 @@
         $(document).ready(function () {
 
             //Add your javascript for large screens here
-            if ($(window).width() < 100) {
+            if ($(window).width() < 800) {
 
 
                 $(".makeitthree").css("font-size", "3vw");
                 $(".makeitfour").css("font-size", "4vw");
                 $("#mail").css("position", "relative");
                 $('#phonenewline').html("<img id=\"phoneicon\" style=\"width: 9%; height: 9%; font-size: 120% \" src=\"images/phone.png\"><span style=\"font-size: 150%\"><br/>+91-9868109240<br/><br/></span>");
-
+                $("iframe").width($(window).width() - ($(window).width() * 0.1));
+                $("iframe").height($(window).width() - ($(window).width() * 0.2));
 
             }
 
