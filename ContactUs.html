@@ -78,7 +78,125 @@
 
 
 
-       
+        .demof ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        .demof li {
+            padding: 20px;
+            border-bottom: 1px dashed #ccc;
+        }
+
+            .demof li.odd {
+                background: #fafafa;
+            }
+
+            .demof li:after {
+                content: '';
+                display: block;
+                clear: both;
+            }
+
+        .demof img {
+            float: left;
+            width: 100px;
+            margin: 5px 15px 0 0;
+        }
+
+        .demof a {
+            font-family: Arial, sans-serif;
+            font-size: 130%;
+            font-weight: bold;
+            color: #06f;
+        }
+
+
+        .demo3 {
+            font-family: Arial, sans-serif;
+            border: 1px solid #C20;
+            margin: 50px 0;
+            font-style: italic;
+            position: relative;
+            padding: 0 0 0 80px;
+            box-shadow: 0 2px 5px -3px #000;
+            border-radius: 3px;
+        }
+
+            .demo3:before {
+                content: "Latest News";
+                display: inline-block;
+                font-style: normal;
+                background: #C20;
+                padding: 10px;
+                color: #FFF;
+                font-weight: bold;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            .demo3:after {
+                content: '';
+                display: block;
+                top: 0;
+                left: 80px;
+                background: linear-gradient(#FFF, rgba(255, 255, 255, 0));
+                height: 20px;
+            }
+
+            .demo3 ul li {
+                list-style: none;
+                padding: 10px 0;
+            }
+
+
+        .demo4 {
+            border: 2px solid #06F;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+
+        .demo5 {
+            border: 2px solid #FF3333;
+            margin-top: 10px;
+            border-radius: 10px;
+            width: 500px;
+            -webkit-box-shadow: inset 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
+            -moz-box-shadow: inset 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
+            box-shadow: inset 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
+        }
+
+            .demo5 ul {
+                padding: 0;
+            }
+
+                .demo5 ul li {
+                    padding: 10px 10px 10px 10px;
+                    border-bottom: 1px solid #FF3333;
+                    border-radius: 10px;
+                    list-type: none;
+                    margin: 0;
+                }
+
+        .et-run {
+            background-color: #0cf;
+            color: white;
+            border: 1px solid black;
+        }
+
+        .zoom {
+            padding: 50px;
+            background-color: none;
+            transition: transform .2s; /* Animation */
+            width: 15%;
+            height: 15%;
+            margin: 0 auto;
+        }
+
+            .zoom:hover {
+                transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+            }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
@@ -132,7 +250,7 @@
                 $(".makeitthree").css("font-size", "3vw");
                 $(".makeitfour").css("font-size", "4vw");
                 $("#mail").css("position", "relative");
-
+                $('#phonenewline').html("<img id=\"phoneicon\" style=\"width: 9%; height: 9%; font-size: 120% \" src=\"images/phone.png\"><span style=\"font-size: 150%\"><br/>+91-9868109240<br/><br/></span>");
 
 
             }
@@ -173,10 +291,11 @@
                 <br />
                 <span id="mail" style="margin-left: 0%;margin-top: 4%;color: darkblue;font-family: serif;font-weight: 600;">
                     <img id="mailicon" style="width:12%;height:12%;" src="images/mail.png">
-                    <span style="font-size:150%;">ummeddugarjain@gmail.com</span><br />&nbsp;<img id="phoneicon" style="width:9%;height:9%;font-size:120%" src="images/phone.png"> <span style="font-size:150%">+91-9868109240</span>
+                    <span style="font-size:140%;">ummeddugarjain@gmail.com</span><br />&nbsp;<span id="phonenewline"><img id="phoneicon" style="width:9%;height:9%;font-size:120%" src="images/phone.png"> <span style="font-size:150%">+91-9868109240</span></span>
                 </span>
             </div>
         </div>
+    </div>
     </div>
 
     <div>
@@ -248,6 +367,7 @@
             $(".makeitfour").css("font-size", "4vw");
             $('.demo5').easyTicker({
                 direction: 'down',
+                speed: 'slow',
                 visible: 4
             });
         });
@@ -257,8 +377,8 @@
         <div class="row">
             <div class="col-sm-4" style="text-align:center;">
                 <img style="width:23%;height:23%;" src="images/HEADSHOT_transparent.png" alt="Ummed Dugar Jain" />
-                <h3 style="color:darkred;">Ummed Dugar Jain <br /></h3><span style="font-size:200%;font-weight:600; color:darkblue"> World Renowned  Vaastu Consultant</span><br/>
-               <span style="font-size:130%;font-weight:600;text-align:justify;"> Mr. Ummed Dugar Jain is an ace Vaastu Consultant of India. He has 30+ years of experience in designing Residences, factories, offices etc as per Vaastu principles.<br /> He has been awarded with many title and recognitions from various eminent personalities that include prestigious “Rajdhani Ratna Award”, “Samaj Gaurav”, “Jain Ratna”, “Jyotish Bhaskar” etc for providing excellent service in this field.</span>
+                <h3 style="color:darkred;">Ummed Dugar Jain <br /></h3><span style="font-size:200%;font-weight:600; color:darkblue"> World Renowned  Vaastu Consultant</span><br />
+                <span style="font-size:130%;font-weight:600;text-align:justify;"> Mr. Ummed Dugar Jain is an ace Vaastu Consultant of India. He has 30+ years of experience in designing Residences, factories, offices etc as per Vaastu principles.<br /> He has been awarded with many title and recognitions from various eminent personalities that include prestigious “Rajdhani Ratna Award”, “Samaj Gaurav”, “Jain Ratna”, “Jyotish Bhaskar” etc for providing excellent service in this field.</span>
                 <div style="
     text-align:  justify;
     padding-left: 10%;
@@ -268,7 +388,7 @@
             </div>
             <div class="col-sm-4" style="text-align:center">
                 <div>
-                    <br/>
+                    <br />
                     <h3 style="color:darkred;">Contact us :-</h3>
                     <br>
                     <span style="margin-right:10px;">
@@ -278,7 +398,7 @@
                     </span>
 
                 </div>
-                <br/>
+                <br />
                 <div style="text-align:left;padding-left:10%;">
                     <span style="font-size: 120%;color: darkblue;font-family: serif;font-weight: 600;">
                         <span style="
@@ -288,84 +408,83 @@
                 </div>
             </div>
             <div class="col-sm-4" style="text-align:center">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.1189328404066!2d77.18626731495594!3d28.686088688406016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d02738698097d%3A0x1cd957585fafe5df!2sDugar+Vaastu+Consultants!5e0!3m2!1sen!2sus!4v1524403553913" onload="this.width = (screen.width)/2.5; this.height = (screen.width) / 3;"  frameborder="0" style="border:0" allowfullscreen></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.1189328404066!2d77.18626731495594!3d28.686088688406016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d02738698097d%3A0x1cd957585fafe5df!2sDugar+Vaastu+Consultants!5e0!3m2!1sen!2sus!4v1524403553913" onload="this.width = (screen.width)/2.5; this.height = (screen.width) / 3;" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
         </div>
-        </div>
+    </div>
 
 
-                <br /><br /><br />
-                <style>
+    <br /><br /><br />
+    <style>
 
 
-                    .footer {
-                        position: relative;
-                        left: 0;
-                        bottom: 0;
-                        width: 100%;
-                        background-color: #0b5394;
-                        color: white;
-                        text-align: center;
-                    }
-                </style>
+        .footer {
+            position: relative;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #0b5394;
+            color: white;
+            text-align: center;
+        }
+    </style>
 
-                <div class="container footer">
-                    <br /><br />
-                    <div class="row">
-                        <div class="col-sm-4">
+    <div class="container footer">
+        <br /><br />
+        <div class="row">
+            <div class="col-sm-4">
 
-                            <table>
-                                <tr>
-                                    <td style="color:white; font-family:'Times New Roman', Times, serif;font-style:italic;text-align:center;">
-                                        <img id="medal" src="images/medal.png" style="width:40%;height:15%;margin-top:1%;margin-bottom:3%;" /><br />
+                <table>
+                    <tr>
+                        <td style="color:white; font-family:'Times New Roman', Times, serif;font-style:italic;text-align:center;">
+                            <img id="medal" src="images/medal.png" style="width:40%;height:12%;margin-top:1%;margin-bottom:3%;" /><br />
 
-                                        <span style="font-size:150%;color:white">  61 </span><br /><span style="font-size:100%;color:white"> AWARDS & RECOGNITIONS</span>
-                                    </td>
+                            <span style="font-size:150%;color:white">  61 </span><br /><span style="font-size:100%;color:white"> AWARDS & RECOGNITIONS</span>
+                        </td>
 
-                                    <td style="margin-left:30%;font-family:'Times New Roman', Times, serif;font-style:italic;text-align:center;">
-                                        <img id="client" src="images/client.png" style=" width:30%;height:14%;" /><br /><br />
-                                        <span style="font-size:150%;color:white">  10000+ </span><br /><span style="font-size:100%;color:white"> CLIENTS SERVED IN PAST 30 YEARS</span>
-                                    </td>
-                                    <td style="margin-left:15%;font-family:'Times New Roman', Times, serif;font-style:italic;text-align:center;">
-                                        <img id="books" src="images/Books_ic.png" style="margin-left:10%;width:42%;height:25%;" /><br />
-                                        <span style="font-size:150%;color:white;margin-left:10%;">  15 </span><br /><span style="font-size:100%;color:white;margin-left:10%;"> BOOKS AUTHORED ON VAASTU & OTHER SCIENCES</span>
-                                    </td>
-                                </tr>
-                            </table>
+                        <td style="margin-left:30%;font-family:'Times New Roman', Times, serif;font-style:italic;text-align:center;">
+                            <img id="client" src="images/client.png" style=" width:30%;height:11%;" /><br /><br />
+                            <span style="font-size:150%;color:white">  10000+ </span><br /><span style="font-size:100%;color:white"> &nbsp;CLIENTS SERVED IN PAST 30 YEARS</span>
+                        </td>
+                        <td style="margin-left:15%;font-family:'Times New Roman', Times, serif;font-style:italic;text-align:center;">
+                            <img id="books" src="images/Books_ic.png" style="margin-left:10%;width:42%;height:20%;" /><br />
+                            <span style="font-size:150%;color:white;margin-left:10%;">  15 </span><br /><span style="font-size:100%;color:white;margin-left:10%;"> BOOKS AUTHORED ON VAASTU & OTHER SCIENCES</span>
+                        </td>
+                    </tr>
+                </table>
 
-                        </div>
-                        <div class="col-sm-4">
-                            <h3 style="color:white; ">
-                                Contact Us at :-<br /><br />
-                            </h3>
-                            <div>
-                                <span style="font-size: 130%;">
-                                    <span><img style="width:6%;height:4%;padding-bottom: 0px;padding-right: 5px;" src="images/mail.png"></span><span id="emailid" style="font-size:130%; font-family:'Times New Roman', Times, serif;text-align:center;position:  relative;top: -10px;color:white">ummeddugarjain@gmail.com<br /><br /></span><img style="width: 5.5%;height: 3.5%;top: -10px;left: 3px;position:  relative;padding-right: 5px;" src="images/phone.png"><span id="phoneno" style="font-size:150%; font-family:'Times New Roman', Times, serif;text-align:center;font-size:130%;position: relative;top: -15px;color:white"> +91-9868109240 <br> </span>
-                                </span>
-                            </div>
-                            <span style="margin-right:10px;">
-                                <a href="https://www.facebook.com/dugarvaastu/" target="_blank" style="vertical-align:top;height:5%;width:7%" class="fa fa-facebook"></a>
-                                <a href="https://twitter.com/UmmedDugar" target="_blank" style="vertical-align:top;width:7%;height:5%;" class="fa fa-twitter"></a>
-                                &nbsp; <a href="https://www.youtube.com/channel/UC0qxevUqfzqCTxbyD_B23hw" style="vertical-align:top;width:7%;height:5%;" target="_blank" class="fa fa-youtube"></a><br>
-                            </span>
+            </div>
+            <div class="col-sm-4">
+                <h3 style="color:white; ">
+                    <br />    Contact Us at :-<br /><br />
+                </h3>
+                <div>
+                    <span id="emailid" style="font-size:130%; font-family:'Times New Roman', Times, serif;text-align:center;position:  relative;top: -10px;color:white">Email:-<br />ummeddugarjain@gmail.com<br /><br /></span><span id="phoneno" style="font-size:130%; font-family:'Times New Roman', Times, serif;text-align:center;font-size:130%;position: relative;top: -15px;color:white"><br />Phone:-<br /> +91-9868109240 <br> </span>
 
-                        </div>
-                        <div class="col-sm-4" style="color:white;">
-                            <h3 style="padding-left:20%;text-align:left;">
-                                Sitemap<br />
-                            </h3>
-                            <div style="line-height:130%;font-size:120%; text-align:left;padding-left:20%;color:white;">
-                                <a style="color:white;" href="index.html">Home</a><br />
-                                <a style="color:white;" href="About.html">About</a><br /><a style="color:white;" href="ServicesHome.html">Residence Services</a><br /><a style="color:white;" href="ServicesOffice.html">Office Services</a><br /><a style="color:white;" href="ServicesFactory.html">Factory Services</a><br />
-                                <a style="color:white;" href="Videos.html">Videos</a><br />
-                                <a style="color:white;" href="VaastuBooks.html">Books</a><br />
-                                <a style="color:white;" href="Tips.html">Tips</a><br />
-                                <a style="color:white;" href="ContactUs.html">Contact Us</a><br />
-                            </div>
-                        </div>
-                    </div><br />
-                    Copyright © 2018 - Dugar Vaastu Consultants. All Rights Reserved.<br /><br />
                 </div>
+                <span style="margin-right:10px;">
+                    <a href="https://www.facebook.com/dugarvaastu/" target="_blank" style="vertical-align:top;height:5%;width:7%" class="fa fa-facebook"></a>
+                    <a href="https://twitter.com/UmmedDugar" target="_blank" style="vertical-align:top;width:7%;height:5%;" class="fa fa-twitter"></a>
+                    &nbsp; <a href="https://www.youtube.com/channel/UC0qxevUqfzqCTxbyD_B23hw" style="vertical-align:top;width:7%;height:5%;" target="_blank" class="fa fa-youtube"></a><br>
+                </span>
+
+            </div>
+            <div class="col-sm-4" style="color:white;text-align:center">
+                <h3 style="padding-left:20%;text-align:left;">
+                    Sitemap<br />
+                </h3>
+                <div style="line-height:130%;font-size:120%; text-align:left;padding-left:20%;color:white;">
+                    <a style="color:white;" href="index.html">Home</a><br />
+                    <a style="color:white;" href="About.html">About</a><br /><a style="color:white;" href="ServicesHome.html">Residence Services</a><br /><a style="color:white;" href="ServicesOffice.html">Office Services</a><br /><a style="color:white;" href="ServicesFactory.html">Factory Services</a><br />
+                    <a style="color:white;" href="Videos.html">Videos</a><br />
+                    <a style="color:white;" href="VaastuBooks.html">Books</a><br />
+                    <a style="color:white;" href="Tips.html">Tips</a><br />
+                    <a style="color:white;" href="ContactUs.html">Contact Us</a><br />
+                </div>
+            </div>
+        </div><br />
+        Copyright © 2018 - Dugar Vaastu Consultants. All Rights Reserved.<br /><br />
+    </div>
 
 </body>
 </html>
